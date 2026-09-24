@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Ihya' Nashirudin Abrar, Developer</title>
+    <meta name="description" content="Portfolio of Ihya' Nashirudin Abrar, web and mobile developer and data/AI researcher from Pontianak, Indonesia." />
+    <meta property="og:title" content="Ihya' Nashirudin Abrar, Developer" />
+    <meta property="og:description" content="I build small, useful products and measure whether they work." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="__SITE_URL__/" />
+    <meta property="og:image" content="__SITE_URL__/photo.jpg" />
+    <meta property="og:image:width" content="720" />
+    <meta property="og:image:height" content="720" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#f1f1ee" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      // pick the theme before first paint: saved choice, else the system setting
+      try {
+        var saved = localStorage.getItem('theme')
+        document.documentElement.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light')
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
